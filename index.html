@@ -246,6 +246,26 @@
   .tip-card p{ font-size:.9rem; color:#c9d6db; line-height:1.6; margin:0; }
   .tip-card strong{ color:#fff; }
 
+  /* ===== METHOD ICONS / TOOL CARDS ===== */
+  .method-icon{ width:52px; height:52px; flex-shrink:0; }
+  .method-head{ display:flex; align-items:center; gap:.9rem; margin-bottom:.3rem; }
+  .method-head h3{ font-size:1.2rem; font-weight:700; color:var(--navy-deep); margin:0; }
+  .method-sub{ font-size:.85rem; color:#6b6558; margin-left:calc(52px + .9rem); margin-bottom:1rem; }
+
+  .tool-card{
+    background:#fffdf7; border:1px solid var(--line); border-radius:4px; padding:1.1rem 1.3rem; height:100%;
+  }
+  .tool-card h4{ font-size:1rem; font-weight:700; color:var(--navy-deep); margin-bottom:.3rem; }
+  .tool-card h4 a{ color:var(--navy-deep); text-decoration:none; border-bottom:1.5px solid var(--teal); }
+  .tool-card h4 a:hover{ color:var(--teal); }
+  .tool-card p{ font-size:.9rem; color:#3a3a34; line-height:1.6; margin:0; }
+  .tool-card a.inline-link{ color:var(--teal); font-weight:600; text-decoration:none; border-bottom:1.5px solid var(--teal); }
+  .tool-card a.inline-link:hover{ color:var(--navy-deep); }
+    display:inline-block; border:2px dashed var(--navy-deep); border-radius:6px; padding:1rem 1.6rem;
+    font-family:'Space Grotesk',sans-serif; font-weight:700; color:var(--navy-deep); text-align:center;
+    transform:rotate(-1.5deg);
+  }
+
   .closing-stamp{
     display:inline-block; border:2px dashed var(--navy-deep); border-radius:6px; padding:1rem 1.6rem;
     font-family:'Space Grotesk',sans-serif; font-weight:700; color:var(--navy-deep); text-align:center;
@@ -271,10 +291,11 @@
       </div>
       <div class="flex-grow-1 text-center text-md-start">
         <div class="d-flex flex-column flex-md-row align-items-center align-items-md-center gap-2 mb-1">
-        </div>
-        <h1 class="headline">Modelagem e Impressão 3D</h1>
+      </div>
+        <h1 class="headline">Impressão 3D Descomplicada para Educadores</h1>
+        <p class="subline">O guia prático da modelagem à primeira impressão — criado para iniciantes e leigos na sala de aula.</p>
         <div class="mt-3">
-          <span class="stamp"><span class="dot"></span>Comunidade de Aprendizagem — 4ª CRE - 28/08/2026</span>
+          <span class="stamp"><span class="dot"></span>Comunidade de Aprendizagem — 4ª CRE - 26/08/2026</span>
         </div>
       </div>
     </div>
@@ -736,12 +757,156 @@
     </div>
   </section>
 
+  <!-- 15. CONVERTENDO IMAGENS EM STL -->
+  <section class="mb-5">
+    <div class="section-tag"><span class="idx">15</span> Convertendo imagens (PNG/JPG) em arquivos STL</div>
+    <p class="lede mb-4">
+      Para converter uma imagem (PNG ou JPG) em um arquivo 3D STL para impressão ou modelagem, você pode usar
+      conversores online automatizados, plataformas de Inteligência Artificial ou softwares de modelagem. A escolha
+      do método depende inteiramente do tipo de imagem que você tem: logotipos e desenhos 2D planos exigem caminhos
+      diferentes de fotos tridimensionais e miniaturas.
+    </p>
+
+    <!-- Método 1: IA -->
+    <div class="method-head">
+      <svg class="method-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="8" y="18" width="40" height="32" rx="3" stroke="#122a41" stroke-width="3"/>
+        <circle cx="18" cy="28" r="3.2" fill="#c8791f"/>
+        <path d="M10 46 L24 34 L34 42 L46 30" stroke="#122a41" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M52 34 L64 34" stroke="#2f7a76" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1 6"/>
+        <path d="M58 22 L70 34 L58 46" stroke="#2f7a76" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M78 28 L92 28 L92 40 L84 46 L76 40 Z" stroke="#122a41" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M78 28 L84 34 L92 28" stroke="#122a41" stroke-width="2.2" stroke-linejoin="round"/>
+        <path d="M84 34 L84 46" stroke="#122a41" stroke-width="2.2"/>
+      </svg>
+      <h3>Método 1: Ferramentas de IA</h3>
+    </div>
+    <div class="method-sub">Para fotos, objetos e miniaturas 3D</div>
+    <p class="lede mb-3">
+      Se você quer transformar a foto de um objeto, pessoa ou animal em um modelo 3D completo usando Inteligência
+      Artificial (reconstrução image-to-3D), as melhores plataformas atuais são:
+    </p>
+    <div class="row g-3 mb-2">
+      <div class="col-12 col-md-4">
+        <div class="tool-card">
+          <h4><a href="https://www.meshy.ai/pt-BR" target="_blank" rel="noopener">Meshy AI</a></h4>
+          <p>Permite fazer upload de arquivos JPG ou PNG e gerar uma malha 3D texturizada em menos de um minuto. Exporta diretamente em STL para impressão.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="tool-card">
+          <h4><a href="https://www.sloyd.ai/tools/file-converter/jpg/to/stl" target="_blank" rel="noopener">Sloyd AI</a></h4>
+          <p>Excelente conversor baseado em nuvem. Suporta imagens de até 20 MB e gera geometrias complexas de forma limpa.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="tool-card">
+          <h4>MakerLab (Bambu Lab)</h4>
+          <p>Ferramenta experimental muito utilizada pela comunidade maker para transformar fotos simples em modelos STL prontos para fatiamento.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Método 2: Conversores diretos -->
+    <div class="method-head mt-5">
+      <svg class="method-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="14" width="34" height="34" rx="2" stroke="#122a41" stroke-width="3"/>
+        <path d="M18 40 L26 24 L32 34 L38 22" stroke="#c8791f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M48 31 L60 31" stroke="#2f7a76" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M56 25 L62 31 L56 37" stroke="#2f7a76" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M70 48 L70 20 L92 20 L92 48 Z" stroke="#122a41" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M70 20 L81 8 L92 20" stroke="#122a41" stroke-width="2.6" stroke-linejoin="round" fill="none"/>
+        <path d="M76 40 L86 40 M76 34 L86 34" stroke="#122a41" stroke-width="2"/>
+      </svg>
+      <h3>Método 2: Conversores diretos</h3>
+    </div>
+    <div class="method-sub">Para logotipos, chaveiros e silhuetas</div>
+    <p class="lede mb-3">
+      Se a sua imagem for um logotipo, um vetor ou um desenho preto e branco com linhas bem definidas, a conversão
+      direta por extrusão é a melhor escolha.
+    </p>
+    <div class="row g-3">
+      <div class="col-12 col-md-6">
+        <div class="tool-card">
+          <h4><a href="https://imagetostl.org/pt" target="_blank" rel="noopener">ImageToSTL.org</a></h4>
+          <p>Site gratuito e instantâneo onde você envia o arquivo PNG/JPG e ele cria um relevo tridimensional automaticamente.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="tool-card">
+          <h4><a href="https://www.3dpea.com/pt/convert/JPG-to-STL" target="_blank" rel="noopener">3DPEA</a></h4>
+          <p>Conversor online simplificado focado em transformar imagens bidimensionais em malhas rápidas para fatiadores.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Método 3: Manual -->
+    <div class="method-head mt-5">
+      <svg class="method-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 82 L46 54" stroke="#122a41" stroke-width="4" stroke-linecap="round"/>
+        <path d="M42 58 L58 42 L66 50 L50 66 Z" stroke="#c8791f" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M62 46 L74 34" stroke="#122a41" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="78" cy="30" r="6" stroke="#2f7a76" stroke-width="3"/>
+        <path d="M14 86 L22 78" stroke="#122a41" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+      <h3>Método 3: Método tradicional manual</h3>
+    </div>
+    <div class="method-sub">Maior precisão</div>
+    <p class="lede mb-3">
+      Se você precisa de um controle dimensional perfeito (como criar peças técnicas ou brindes corporativos
+      exatos), o processo ideal envolve converter o tipo de arquivo:
+    </p>
+    <div class="mt-3">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h4>Vetorize a imagem</h4>
+          <p>Use um site como o <a class="inline-link" href="https://convertio.co/" target="_blank" rel="noopener">Convertio</a> para transformar seu JPG/PNG em SVG (vetor).</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h4>Importe no CAD</h4>
+          <p>Abra o arquivo SVG em softwares gratuitos como o Tinkercad ou o Fusion 360.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h4>Extrude</h4>
+          <p>Dê volume/altura ao desenho vetorizado.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h4>Exporte</h4>
+          <p>Salve o projeto final diretamente no formato .STL.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout mt-4">
+      <h4>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="vertical-align:-4px; margin-right:.3rem;">
+          <path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.6.6 1 1.4 1 2.5h6c0-1.1.4-1.9 1-2.5A6 6 0 0 0 12 3Z" stroke="#c8791f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Dica de ouro
+      </h4>
+      <p>
+        Para obter o melhor resultado possível em qualquer uma das ferramentas, utilize imagens com fundo limpo
+        (de preferência branco ou transparente), boa iluminação e com o objeto centralizado.
+      </p>
+    </div>
+  </section>
+
 </main>
 
 <footer class="py-4 mt-4">
   <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 text-center text-md-start">
     <span>Impressão 3D Descomplicada para Educadores · Versão Pedagógica</span>
-    <span class="mono">Comunidade de Aprendizagem — 4ª CRE - 28/08/2026</span>
+    <span class="mono">Comunidade de Aprendizagem — 4ª CRE - 26/08/2026</span>
   </div>
 </footer>
 
